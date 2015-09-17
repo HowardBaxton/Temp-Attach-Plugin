@@ -141,7 +141,7 @@ default {
     }
 
     on_rez(integer rez) {
-        listenChannel = rez;
+        listenChannel = (integer)((0x00FFFFFF & (rez >> 8)) + 0x7F000000);
         listen_handle = llListen(listenChannel, "","", "");
         llSetTimerEvent(60.0);
     }
