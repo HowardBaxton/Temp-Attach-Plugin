@@ -13,7 +13,7 @@ Make a BTN notecard with the following contents to rez and temp attach "Male Cre
 PROP|Male Create Glasses|<-1.0,0,1.5>|<0,0,0>
 
 Make another BTN notecard with the folloing contents to detach "Male Create Glasses":
-LINKMSG|-6002|Male Create Glasses=detach/17|%AVKEY%
+LINKMSG|-6002|Male Create Glasses=detach|%AVKEY%
 
 
 */
