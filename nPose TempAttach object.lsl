@@ -14,7 +14,7 @@ PROP|Male Create Glasses|<-1.0,0,1.5>|<0,0,0>
 LINKMSG|-6002|Male Create Glasses=attach/17|%AVKEY%
 
 Make another BTN notecard with the folloing contents to detach "Male Create Glasses":
-LINKMSG|-6002|Male Create Glasses=detach/17|%AVKEY%
+LINKMSG|-6002|Male Create Glasses=detach|%AVKEY%
 
 
 */
