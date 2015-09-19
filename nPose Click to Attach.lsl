@@ -1,3 +1,23 @@
+/*
+IMPORTANT NOTES:
+-----------------
+TEMP ATTACH ITEMS WILL BE DELETED ONCE REZZED INWORLD.  PLEASE TAKE CARE TO USE ONLY ITEMS WITH COPY PERMISSIONS.
+Any items intended to be temp attached to anyone other than the build owner must have transfer permissions.
+This script will get it's attach point from the description of the object.
+-----------------
+
+
+nPose will talk to this script on the nPose build's chat channel, even after attached to another AV besides the nPose build owner.
+
+Make a BTN notecard with the following contents to rez and temp attach "Male Create Glasses":
+PROP|Male Create Glasses|<-1.0,0,1.5>|<0,0,0>
+
+Make another BTN notecard with the folloing contents to detach "Male Create Glasses":
+LINKMSG|-6002|Male Create Glasses=detach/17|%AVKEY%
+
+
+*/
+
 key userKey;
 integer attachPoint;
 integer listenChannel;
