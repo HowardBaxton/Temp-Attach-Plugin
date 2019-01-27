@@ -126,7 +126,7 @@ default {
 
     timer() {
         if((timerInc == 60.0) && (listenChannel != 0)) {
-            if(!llGetAttached()) {
+            if(!llGetAttached() && (llList2Key(llGetObjectDetails(llGetKey(), [OBJECT_REZZER_KEY]), 0) != llGetOwner())) {
                 llDie();
             }
             else {
@@ -134,9 +134,6 @@ default {
                 timerInc = 10;
                 llSetTimerEvent(timerInc);
             }
-        }else if(llKey2Name(parentID) == "") {
-            //we have not received a parentID from the nPose core.
-            llDie();
         }
     }
 
